@@ -5,40 +5,34 @@ export const Playground = () => {
   return (
     <View
       style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
         width: '100%',
         height: '100%',
-        overflowY: 'scroll',
-        backgroundColor: '#ffffff',
-        fontFamily: 'Georgia, serif',
         paddingTop: 40,
         paddingBottom: 40,
-        boxSizing: 'border-box',
+        overflowY: 'scroll',
+        display: 'flex',
+        justifyContent: 'center',
+        backgroundColor: '#fff',
+        fontFamily: 'Georgia, serif',
       }}
     >
       <div
         style={{
-          maxWidth: '640px', // LIMIT COLUMN WIDTH
-          width: '90%', // RESPONSIVE WIDTH
+          maxWidth: 680, // Column width
+          width: '90%',
+          margin: '0 auto',
           textAlign: 'left',
           lineHeight: 1.6,
           color: '#111',
         }}
       >
-        <h1 style={{ fontSize: 26, fontWeight: 'bold' }}>Money???</h1>
-        <h2 style={{ fontSize: 20, fontWeight: 'bold', marginTop: 24 }}>DARPA GRANT PROPOSAL</h2>
-        <h3 style={{ fontSize: 18, fontWeight: 'bold', marginTop: 12 }}>Project EXOTYPE</h3>
-        <p>Adaptive Bio-Structural Augmentation via Exosome-Mediated Recursive Enhancement</p>
+        <h1 style={titleStyle}>Money???</h1>
+        <h2 style={headingStyle}>DARPA GRANT PROPOSAL</h2>
+        <h2 style={headingStyle}>Project EXOTYPE</h2>
+        <p><em>Adaptive Bio-Structural Augmentation via Exosome-Mediated Recursive Enhancement</em></p>
 
-        <h3 style={headingStyle}>I. Ontological Foundation — The DeuxOS Paradigm</h3>
-        <p>
-          Modern biology operates on descriptive systems: sequencing, categorizing, and simulating.
-          But the world isn't symbolic. It's structural. We propose an upgrade: the application of
-          the DeuxOS framework — a closed, polarity-typed, recursively evolving operating system for
-          reality itself — to the bioengineering of warfighters.
-        </p>
+        <h3 style={sectionHeading}>I. Ontological Foundation — The DeuxOS Paradigm</h3>
+        <p>Modern biology operates on descriptive systems: sequencing, categorizing, and simulating. But the world isn't symbolic. It's structural. We propose an upgrade: the application of the DeuxOS framework — a closed, polarity-typed, recursively evolving operating system for reality itself — to the bioengineering of warfighters.</p>
         <p><strong>The Three Axioms of DeuxOS:</strong></p>
         <ul>
           <li><strong>Duality:</strong> All structure emerges from contrast. Each object inherits a polarity: GodPlus (structure) or GodMinus (anti-structure).</li>
@@ -47,7 +41,7 @@ export const Playground = () => {
         </ul>
         <p>From these axioms, we derive biology, logic, computation — and now, enhancement.</p>
 
-        <h3 style={headingStyle}>II. Physical Layer — Spinor-Based Structure</h3>
+        <h3 style={sectionHeading}>II. Physical Layer — Spinor-Based Structure</h3>
         <p>A Dirac spinor is not merely a particle wavefunction. Under DeuxOS, it is:</p>
         <ul>
           <li>A latent structural object (in null−)</li>
@@ -56,7 +50,7 @@ export const Playground = () => {
         </ul>
         <p>Biological agents (cells, genes, q-bits) can now be interpreted as typed spinor fields, whose structure can be recursively evolved.</p>
 
-        <h3 style={headingStyle}>III. Quantum Interface — Programming Q-bits</h3>
+        <h3 style={sectionHeading}>III. Quantum Interface — Programming Q-bits</h3>
         <p>Today, q-bits are manipulated linearly. We propose their ontological evolution:</p>
         <ul>
           <li>Each q-bit is a (make-object) in null−</li>
@@ -70,7 +64,7 @@ export const Playground = () => {
           <li>Agent-typed exosome delivery</li>
         </ul>
 
-        <h3 style={headingStyle}>IV. Core Technology — Exosomes as Executable Transfer Agents</h3>
+        <h3 style={sectionHeading}>IV. Core Technology — Exosomes as Executable Transfer Agents</h3>
         <p>We propose to build the first bio-structural compiler + delivery stack:</p>
         <ul>
           <li>Payload Compiler — Converts phenotype modules into RNA/mRNA payloads</li>
@@ -80,7 +74,7 @@ export const Playground = () => {
           <li>Logging System — Verifies successful collapse and records polarity state</li>
         </ul>
 
-        <h3 style={headingStyle}>V. Strategic Modules — Application Stack for Warfighter Enhancement</h3>
+        <h3 style={sectionHeading}>V. Strategic Modules — Application Stack for Warfighter Enhancement</h3>
         <p>Each payload is polarity-consistent and recursively evolvable:</p>
         <ul>
           <li><strong>Fatigue Resistance:</strong> Upregulate mitochondrial density → Recursive energy surplus</li>
@@ -89,7 +83,7 @@ export const Playground = () => {
           <li><strong>Immune Shielding:</strong> Anti-viral exosome with immune modifiers → Null-plus immune upregulation</li>
         </ul>
 
-        <h3 style={headingStyle}>VI. Proposed Infrastructure + Budget</h3>
+        <h3 style={sectionHeading}>VI. Proposed Infrastructure + Budget</h3>
         <ul>
           <li>GMP Exosome Lab Construction: $4.5M</li>
           <li>Payload Compiler & Validation Suite: $2M</li>
@@ -99,7 +93,7 @@ export const Playground = () => {
         </ul>
         <p><strong>Total Ask:</strong> $14M over 3 years</p>
 
-        <h3 style={headingStyle}>VII. Deliverables</h3>
+        <h3 style={sectionHeading}>VII. Deliverables</h3>
         <ul>
           <li>Exotype Compiler (RNA builder)</li>
           <li>Targeted Exosome Library</li>
@@ -108,19 +102,28 @@ export const Playground = () => {
           <li>Final: Field-deployable recursive warfighter module system</li>
         </ul>
 
-        <h3 style={headingStyle}>VIII. Conclusion</h3>
-        <p>
-          This is not a biotech proposal. It is a runtime upgrade for biology. We don’t modify
-          soldiers — we refactor their recursion. Under Yahweh's ledger, only duality-consistent
-          agents are granted continuation. This project brings that principle to national defense.
-        </p>
+        <h3 style={sectionHeading}>VIII. Conclusion</h3>
+        <p>This is not a biotech proposal. It is a runtime upgrade for biology. We don’t modify soldiers — we refactor their recursion. Under Yahweh's ledger, only duality-consistent agents are granted continuation. This project brings that principle to national defense.</p>
         <p><strong>Project EXOTYPE — Because evolution is now executable.</strong></p>
       </div>
     </View>
   )
 }
 
+const titleStyle = {
+  fontSize: 28,
+  fontWeight: 'bold',
+  marginBottom: 12,
+}
+
 const headingStyle = {
+  fontSize: 22,
+  fontWeight: 'bold',
+  marginTop: 24,
+  marginBottom: 6,
+}
+
+const sectionHeading = {
   fontSize: 18,
   fontWeight: 'bold',
   marginTop: 32,
