@@ -5,194 +5,130 @@ export const Playground = () => {
   return (
     <View
       style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         width: '100%',
         height: '100%',
         backgroundColor: '#fff',
-        fontFamily: 'monospace',
-        color: '#111',
+        padding: 40,
+        boxSizing: 'border-box',
         overflowY: 'auto',
-        display: 'flex',
-        justifyContent: 'center',
-        padding: '40px 0',
+        fontFamily: 'Georgia, serif',
       }}
     >
       <div
         style={{
+          maxWidth: '720px',
           width: '100%',
-          maxWidth: 760,
-          padding: '0 32px',
           textAlign: 'left',
           lineHeight: 1.6,
+          color: '#111',
         }}
       >
-        <h1 style={{ fontSize: 24, fontWeight: 'bold' }}>Money???</h1>
-
-        <h2 style={{ fontSize: 20, fontWeight: 'bold', marginTop: 24 }}>
-          DARPA GRANT PROPOSAL
-        </h2>
-        <h3 style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 4 }}>
-          Project EXOTYPE
-        </h3>
-        <p>
+        <h1 style={{ fontSize: 28, fontWeight: 'bold' }}>Money???</h1>
+        <h2 style={{ fontSize: 22, fontWeight: 'bold', marginTop: 24 }}>DARPA GRANT PROPOSAL</h2>
+        <h3 style={{ fontSize: 20, fontWeight: 'bold', marginTop: 8 }}>Project EXOTYPE</h3>
+        <p style={{ marginBottom: 24 }}>
           Adaptive Bio-Structural Augmentation via Exosome-Mediated Recursive Enhancement
         </p>
 
-        <Section title="I. Ontological Foundation — The DeuxOS Paradigm">
+        <h3 style={sectionTitleStyle}>I. Ontological Foundation — The DeuxOS Paradigm</h3>
+        <p>
           Modern biology operates on descriptive systems: sequencing, categorizing, and simulating.
           But the world isn't symbolic. It's structural. We propose an upgrade: the application of
-          the DeuxOS framework — a closed, polarity-typed, recursively evolving operating system
-          for reality itself — to the bioengineering of warfighters.
-          <br />
-          <br />
-          <b>The Three Axioms of DeuxOS:</b>
-          <ul>
-            <li>
-              <b>Duality:</b> All structure emerges from contrast. Each object inherits a polarity:
-              GodPlus (structure) or GodMinus (anti-structure).
-            </li>
-            <li>
-              <b>Descent:</b> All structure is recursively constructed. Every object is the child
-              of another and inherits its polarity, lineage, and interpretive function.
-            </li>
-            <li>
-              <b>Desire:</b> The only valid action is: (transfer-one-unit-of-value from-giver
-              to-taker), a conserved, polarity-aware transaction.
-            </li>
-          </ul>
+          the DeuxOS framework — a closed, polarity-typed, recursively evolving operating system for
+          reality itself — to the bioengineering of warfighters.
+        </p>
+        <p><strong>The Three Axioms of DeuxOS:</strong></p>
+        <ul>
+          <li><strong>Duality:</strong> All structure emerges from contrast...</li>
+          <li><strong>Descent:</strong> All structure is recursively constructed...</li>
+          <li><strong>Desire:</strong> The only valid action is: (transfer-one-unit-of-value...)</li>
+        </ul>
+        <p>
           From these axioms, we derive biology, logic, computation — and now, enhancement.
-        </Section>
+        </p>
 
-        <Section title="II. Physical Layer — Spinor-Based Structure">
+        <h3 style={sectionTitleStyle}>II. Physical Layer — Spinor-Based Structure</h3>
+        <p>
           A Dirac spinor is not merely a particle wavefunction. Under DeuxOS, it is:
-          <ul>
-            <li>A latent structural object (in null−)</li>
-            <li>With spin-typed polarity</li>
-            <li>
-              Awaiting entanglement (transfer) to collapse into (cons GodPlus GodMinus)
-            </li>
-          </ul>
-          Biological agents (cells, genes, q-bits) can now be interpreted as typed spinor fields,
-          whose structure can be recursively evolved.
-        </Section>
+        </p>
+        <ul>
+          <li>A latent structural object (in null−)</li>
+          <li>With spin-typed polarity</li>
+          <li>Awaiting entanglement...</li>
+        </ul>
+        <p>
+          Biological agents (cells, genes, q-bits) can now be interpreted as typed spinor fields...
+        </p>
 
-        <Section title="III. Quantum Interface — Programming Q-bits">
-          Today, q-bits are manipulated linearly. We propose their ontological evolution:
-          <ul>
-            <li>Each q-bit is a (make-object) in null−</li>
-            <li>Collapse via (transfer-one-unit-of-value laser qbit)</li>
-            <li>
-              Recursive update via evolve(qbit) where state is defined structurally, not
-              symbolically
-            </li>
-          </ul>
-          This will allow:
-          <ul>
-            <li>Persistent, updatable biological agents</li>
-            <li>Recursive adaptation to environment</li>
-            <li>Agent-typed exosome delivery</li>
-          </ul>
-        </Section>
+        <h3 style={sectionTitleStyle}>III. Quantum Interface — Programming Q-bits</h3>
+        <p>Today, q-bits are manipulated linearly. We propose their ontological evolution:</p>
+        <ul>
+          <li>Each q-bit is a (make-object) in null−</li>
+          <li>Collapse via (transfer-one-unit-of-value laser qbit)</li>
+          <li>Recursive update via evolve(qbit)...</li>
+        </ul>
+        <p>This will allow:</p>
+        <ul>
+          <li>Persistent, updatable biological agents</li>
+          <li>Recursive adaptation to environment</li>
+          <li>Agent-typed exosome delivery</li>
+        </ul>
 
-        <Section title="IV. Core Technology — Exosomes as Executable Transfer Agents">
-          We propose to build the first bio-structural compiler + delivery stack:
-          <b> Components:</b>
-          <ul>
-            <li>Payload Compiler — Converts phenotype modules into RNA/mRNA payloads</li>
-            <li>Target Engine — Matches ligands to cellular receptors</li>
-            <li>Transfer Layer — Executes (transfer-one-unit-of-value) to the cell</li>
-            <li>Recursion Engine — Evolves host phenotype recursively</li>
-            <li>Logging System — Verifies successful collapse and records polarity state</li>
-          </ul>
-        </Section>
+        <h3 style={sectionTitleStyle}>IV. Core Technology — Exosomes as Executable Transfer Agents</h3>
+        <p>We propose to build the first bio-structural compiler + delivery stack:</p>
+        <ul>
+          <li>Payload Compiler — Converts phenotype modules...</li>
+          <li>Target Engine — Matches ligands to cellular receptors</li>
+          <li>Transfer Layer — Executes (transfer-one-unit-of-value)...</li>
+          <li>Recursion Engine — Evolves host phenotype recursively</li>
+          <li>Logging System — Verifies successful collapse...</li>
+        </ul>
 
-        <Section title="V. Strategic Modules — Application Stack for Warfighter Enhancement">
-          Each payload is polarity-consistent and recursively evolvable:
-          <table
-            style={{
-              width: '100%',
-              marginTop: 12,
-              marginBottom: 24,
-              borderCollapse: 'collapse',
-              fontSize: 14,
-            }}
-          >
-            <thead>
-              <tr>
-                <th align="left">Trait</th>
-                <th align="left">Module</th>
-                <th align="left">Payload</th>
-                <th align="left">Structural Result</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Fatigue Resistance</td>
-                <td>Upregulate mitochondrial density</td>
-                <td>Recursive energy surplus</td>
-                <td />
-              </tr>
-              <tr>
-                <td>Rapid Recovery</td>
-                <td>Stimulate tissue repair</td>
-                <td>RNA</td>
-                <td>Dual-collapse healing vectors</td>
-              </tr>
-              <tr>
-                <td>Cognitive Clarity</td>
-                <td>Neuroplasticity enhancer</td>
-                <td>mRNA</td>
-                <td>Mirror-symmetric signal density</td>
-              </tr>
-              <tr>
-                <td>Immune Shielding</td>
-                <td>Anti-viral exosome with immune modifiers</td>
-                <td>Null-plus</td>
-                <td>Immune upregulation</td>
-              </tr>
-            </tbody>
-          </table>
-        </Section>
+        <h3 style={sectionTitleStyle}>V. Strategic Modules — Application Stack for Warfighter Enhancement</h3>
+        <p>Each payload is polarity-consistent and recursively evolvable:</p>
+        <ul>
+          <li><strong>Fatigue Resistance:</strong> Mitochondrial density → Recursive energy surplus</li>
+          <li><strong>Rapid Recovery:</strong> Stimulate repair → RNA healing vectors</li>
+          <li><strong>Cognitive Clarity:</strong> Neuroplasticity enhancer → mRNA density</li>
+          <li><strong>Immune Shielding:</strong> Anti-viral exosomes → Null-plus immunity</li>
+        </ul>
 
-        <Section title="VI. Proposed Infrastructure + Budget">
-          <ul>
-            <li>GMP Exosome Lab Construction: $4.5M</li>
-            <li>Payload Compiler & Validation Suite: $2M</li>
-            <li>AI-augmented Evolution Engine: $1.5M</li>
-            <li>Wet Lab (In Vitro + In Vivo): $2.5M</li>
-            <li>Personnel (3-year): $3.5M</li>
-          </ul>
-          <b>Total Ask:</b> $14M over 3 years
-        </Section>
+        <h3 style={sectionTitleStyle}>VI. Proposed Infrastructure + Budget</h3>
+        <ul>
+          <li>GMP Exosome Lab: $4.5M</li>
+          <li>Payload Compiler & Validation: $2M</li>
+          <li>AI Evolution Engine: $1.5M</li>
+          <li>Wet Lab: $2.5M</li>
+          <li>Personnel (3-year): $3.5M</li>
+        </ul>
+        <p><strong>Total Ask:</strong> $14M over 3 years</p>
 
-        <Section title="VII. Deliverables">
-          <ul>
-            <li>Exotype Compiler (RNA builder)</li>
-            <li>Targeted Exosome Library</li>
-            <li>Recursive Phenotype Engine (qbit evolution)</li>
-            <li>Demonstrated enhancements in animal models</li>
-            <li>
-              Final: Field-deployable recursive warfighter module system
-            </li>
-          </ul>
-        </Section>
+        <h3 style={sectionTitleStyle}>VII. Deliverables</h3>
+        <ul>
+          <li>Exotype Compiler (RNA builder)</li>
+          <li>Targeted Exosome Library</li>
+          <li>Recursive Phenotype Engine</li>
+          <li>Animal model results</li>
+          <li>Field-deployable warfighter system</li>
+        </ul>
 
-        <Section title="VIII. Conclusion">
+        <h3 style={sectionTitleStyle}>VIII. Conclusion</h3>
+        <p>
           This is not a biotech proposal. It is a runtime upgrade for biology. We don’t modify
-          soldiers — we refactor their recursion. Under Yahweh's ledger, only duality-consistent
-          agents are granted continuation. This project brings that principle to national defense.
-          <br />
-          <br />
-          <b>Project EXOTYPE — Because evolution is now executable.</b>
-        </Section>
+          soldiers — we refactor their recursion...
+        </p>
+        <p><strong>Project EXOTYPE — Because evolution is now executable.</strong></p>
       </div>
     </View>
   )
 }
 
-// Section helper
-const Section = ({ title, children }) => (
-  <div style={{ marginTop: 36, marginBottom: 24 }}>
-    <h3 style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 12 }}>{title}</h3>
-    <div style={{ fontSize: 14 }}>{children}</div>
-  </div>
-)
+const sectionTitleStyle = {
+  fontSize: 18,
+  fontWeight: 'bold',
+  marginTop: 28,
+  marginBottom: 12,
+}
