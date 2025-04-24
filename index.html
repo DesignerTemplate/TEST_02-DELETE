@@ -11,38 +11,37 @@ export const Playground = () => {
         fontFamily: 'monospace',
         color: '#111',
         overflowY: 'auto',
-        padding: 32,
-        boxSizing: 'border-box',
+        display: 'flex',
+        justifyContent: 'center',
+        padding: '40px 0',
       }}
     >
       <div
         style={{
-          maxWidth: 700,
-          margin: '0 auto',
+          width: '100%',
+          maxWidth: 760,
+          padding: '0 32px',
           textAlign: 'left',
+          lineHeight: 1.6,
         }}
       >
-        <div style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 16 }}>
-          Money???
-        </div>
+        <h1 style={{ fontSize: 24, fontWeight: 'bold' }}>Money???</h1>
 
-        <div style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 8 }}>
+        <h2 style={{ fontSize: 20, fontWeight: 'bold', marginTop: 24 }}>
           DARPA GRANT PROPOSAL
-        </div>
-
-        <div style={{ fontSize: 18, marginBottom: 4 }}>
+        </h2>
+        <h3 style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 4 }}>
           Project EXOTYPE
-        </div>
-
-        <div style={{ fontSize: 14, marginBottom: 24 }}>
+        </h3>
+        <p>
           Adaptive Bio-Structural Augmentation via Exosome-Mediated Recursive Enhancement
-        </div>
+        </p>
 
         <Section title="I. Ontological Foundation — The DeuxOS Paradigm">
           Modern biology operates on descriptive systems: sequencing, categorizing, and simulating.
           But the world isn't symbolic. It's structural. We propose an upgrade: the application of
-          the DeuxOS framework — a closed, polarity-typed, recursively evolving operating system for
-          reality itself — to the bioengineering of warfighters.
+          the DeuxOS framework — a closed, polarity-typed, recursively evolving operating system
+          for reality itself — to the bioengineering of warfighters.
           <br />
           <br />
           <b>The Three Axioms of DeuxOS:</b>
@@ -52,8 +51,8 @@ export const Playground = () => {
               GodPlus (structure) or GodMinus (anti-structure).
             </li>
             <li>
-              <b>Descent:</b> All structure is recursively constructed. Every object is the child of
-              another and inherits its polarity, lineage, and interpretive function.
+              <b>Descent:</b> All structure is recursively constructed. Every object is the child
+              of another and inherits its polarity, lineage, and interpretive function.
             </li>
             <li>
               <b>Desire:</b> The only valid action is: (transfer-one-unit-of-value from-giver
@@ -82,7 +81,8 @@ export const Playground = () => {
             <li>Each q-bit is a (make-object) in null−</li>
             <li>Collapse via (transfer-one-unit-of-value laser qbit)</li>
             <li>
-              Recursive update via evolve(qbit) where state is defined structurally, not symbolically
+              Recursive update via evolve(qbit) where state is defined structurally, not
+              symbolically
             </li>
           </ul>
           This will allow:
@@ -107,13 +107,21 @@ export const Playground = () => {
 
         <Section title="V. Strategic Modules — Application Stack for Warfighter Enhancement">
           Each payload is polarity-consistent and recursively evolvable:
-          <table style={{ width: '100%', borderSpacing: 8, fontSize: 14 }}>
+          <table
+            style={{
+              width: '100%',
+              marginTop: 12,
+              marginBottom: 24,
+              borderCollapse: 'collapse',
+              fontSize: 14,
+            }}
+          >
             <thead>
               <tr>
-                <th>Trait</th>
-                <th>Module</th>
-                <th>Payload</th>
-                <th>Structural Result</th>
+                <th align="left">Trait</th>
+                <th align="left">Module</th>
+                <th align="left">Payload</th>
+                <th align="left">Structural Result</th>
               </tr>
             </thead>
             <tbody>
@@ -169,7 +177,9 @@ export const Playground = () => {
         </Section>
 
         <Section title="VIII. Conclusion">
-          This is not a biotech proposal. It is a runtime upgrade for biology. We don’t modify soldiers — we refactor their recursion. Under Yahweh's ledger, only duality-consistent agents are granted continuation. This project brings that principle to national defense.
+          This is not a biotech proposal. It is a runtime upgrade for biology. We don’t modify
+          soldiers — we refactor their recursion. Under Yahweh's ledger, only duality-consistent
+          agents are granted continuation. This project brings that principle to national defense.
           <br />
           <br />
           <b>Project EXOTYPE — Because evolution is now executable.</b>
@@ -181,8 +191,8 @@ export const Playground = () => {
 
 // Section helper
 const Section = ({ title, children }) => (
-  <div style={{ marginBottom: 40 }}>
-    <div style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 12 }}>{title}</div>
-    <div style={{ fontSize: 14, lineHeight: 1.6 }}>{children}</div>
+  <div style={{ marginTop: 36, marginBottom: 24 }}>
+    <h3 style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 12 }}>{title}</h3>
+    <div style={{ fontSize: 14 }}>{children}</div>
   </div>
 )
